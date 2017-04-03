@@ -1,0 +1,7 @@
+def loan_calculator(amount = 0, rate = 0, time = 0):
+    if 1 <= time > 24:
+        return 'Invalid month'
+    result = (amount * (rate/100) * (time/12)) + amount
+    return result
+
+print (loan_calculator(100000, 12, 18))
